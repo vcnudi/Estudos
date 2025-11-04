@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gradientes</title>
+    <style>
+        * { /* configuracao globla de css */
+            height: 100%;
+        }
+
+        body {
+           /* configurando uma cor unica
+           background-color:rgb(54, 98
+            , 180);*/
+
+         /* gradiente , primiro indicar sentido do gradiente 
+         sentido pode ser.. to left, to right, to top, to bottom, 90deg, -45deg
+         para funcionar o TO TOP foi prreciso configurar o tamanho da pagina como global*/
+         /*pode colocar varias cores e faz o gradiente */
+         background-image: linear-gradient(-45deg,  
+         #cdb4dbff, 
+         #ffc8ddff,
+         #ffafccff,
+         #bde0feff,
+         #a2d2ffff
+        );
+/* radial... com parametro circle */
+        background-image: radial-gradient(square,
+         #cdb4dbff 10%, 
+         #ffc8ddff,
+         #ffafccff,
+         #bde0feff,
+         #a2d2ffff 110%
+        );
+         /* para nao ficar redesenhando o gradiente qdo rolar a tela */ 
+         background-attachment: fixed; 
+
+        }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
