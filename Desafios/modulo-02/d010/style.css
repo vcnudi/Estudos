@@ -159,7 +159,7 @@ abbr:hover {
 }
 
 div.video {
-    background-color: chocolate;
+    background-color: var(--cor4);
     margin-bottom: 30px;
     margin: 0px -20px 30px -20px;
     padding: 20px;
