@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de Imagem de Fundo</title>
+
+    <style>
+        :root {
+            --alt_estante: 500px;
+        }
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+        body {
+            background-color: black;
+            height: 90vh;
+         }   
+
+        div.topo_estante {
+            width: 100%;
+            height: 100vh;
+            background-image: url(imagem_estante/red-nav.png);
+            background-size: 120px;
+            background-repeat: repeat-x;
+            margin-top: -1px;
+            background-position: left top;
+        }
+        h1 {
+            text-align: center;
+            padding: 10px;
+        }
+
+        div.base_estante {
+            width: 100%;
+            background-image: url(imagem_estante/red-footer.png);
+            background-repeat: repeat-x;
+            background-size: 120px;
+            margin-top: -55.6px;
+            background-position: left bottom;
+        }
+
+     
+       
+        div.esquerda{
+            display: inline-block;
+            background-color: green;
+            width: 100px;
+            height: 100%;
+        }
+        div.direita{
+            display: inline-block;
+            background-color: green;
+            width: 100px;
+            height: 100%;
+         }
+        div.meio {
+            /*display: inline-block; */
+            background-image: url(imagem_estante/red-3.jpg);
+            width: 100%;
+            height: 80vh;
+            /*margin-top: -5px;*/
+             
+        }
+
+             
+
+    </style>
+</head>
+
+    <body>
+
+        <div class="topo_estante">
+            <h1>Memória do Teatro</h1>
+        </div>
+<!--
+        <div class="prateleira">
+            <div class="esquerda">  </div>
+            <div class="meio">      </div>
+            <div class="direita">   </div>
+        </div>
+-->      
+       <div class="base_estante">
+            <h1>by Val</h1>
+        </div>
+   
+    </body>
+</html>
