@@ -12,66 +12,96 @@
         * {
             margin: 0px;
             padding: 0px;
+           
         }
         body {
             background-color: black;
-            height: 90vh;
-         }   
-
-        div.topo_estante {
-            width: 100%;
-            height: 100vh;
-            background-image: url(imagem_estante/red-nav.png);
-            background-size: 120px;
-            background-repeat: repeat-x;
-            margin-top: -1px;
-            background-position: left top;
-        }
-        h1 {
-            text-align: center;
-            padding: 10px;
-        }
-
-        div.base_estante {
-            width: 100%;
-            background-image: url(imagem_estante/red-footer.png);
-            background-repeat: repeat-x;
-            background-size: 120px;
-            margin-top: -55.6px;
-            background-position: left bottom;
-        }
-
-     
-       
-       
-        div.meio {
-            /*display: inline-block; */
-            width: 100%;
-            background-image: url(imagem_estante/red-3.jpg);
+            /*overflow: hidden; /* Oculta barras de rolagem vertical e horizontal */
             
+                    } 
+         
+        header {
              
+            position: fixed; /* Fixa o elemento em relação à janela de visualização */
+            top: 0;      /* Alinha na parte inferior */
+            left: 0;        /* Alinha na borda esquerda */
+            width: 100%;    /* Ocupa toda a largura */
+            
+            /* Estilos adicionais */
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000; /* Garante que ele fique acima de outros elementos, se necessário */
+         background-image: url(imagem_estante/red-nav.png);
+         
+         
+        }
+        header h1 {
+            color: black ;
+            text-align: center;
+            padding: 5px;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+       
+        main {
+            
+            background-position: left top;
+            width: 100%;
+            height: 90vh;
+            min-height: 300px;
+            max-height: 100%;
+            background-image: url(imagem_estante/red-3.jpg);
+            margin-top: 60px;
         }
 
-             
+    footer {
+            position: fixed; /* Fixa o elemento em relação à janela de visualização */
+            bottom: 0;      /* Alinha na parte inferior */
+            left: 0;        /* Alinha na borda esquerda */
+            width: 100%;    /* Ocupa toda a largura */
+            
+            /* Estilos adicionais */
+            background-color: #333;
+            color: white;
+            padding: 10px 0;
+            text-align: center;
+            z-index: 1000; /* Garante que ele fique acima de outros elementos, se necessário */
+            background-image: url(imagem_estante/red-footer.png);
+            
+        }
+        footer h1 {
+            text-align: center;
+            color: black;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: small;
+        }
+   
 
     </style>
 </head>
 
     <body>
+        <header>
+            <div class="topo_estante">
+                    <h1>Memória do Teatro</h1>
+                </div>
+        </header>
 
-        <div class="topo_estante">
-            <h1>Memória do Teatro</h1>
-        </div>
+        <main>
 
-        <div class="prateleira">
-            <div class="esquerda">  </div>
-            <div class="meio">      </div>
-            <div class="direita">   </div>
-        </div>
-     
-       <div class="base_estante">
-            <h1>by Val</h1>
-        </div>
+            <div class="prateleira">
+                    <div class="esquerda">  </div>
+                    <div class="meio">      </div>
+                    <div class="direita">   </div>
+                </div>
+        </main>     
+
+       
+        <footer>
+           <h1>by Val</h1>
+        </footer>
+   </div>
    
     </body>
 </html>

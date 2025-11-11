@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste de rodape fixo</title>
+    <style>
+        header {
+    position: fixed; /* Fixa o elemento em relação à janela de visualização */
+    top: 0;      /* Alinha na parte inferior */
+    left: 0;        /* Alinha na borda esquerda */
+    width: 100%;    /* Ocupa toda a largura */
+    
+    /* Estilos adicionais */
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Garante que ele fique acima de outros elementos, se necessário */
+}
+footer {
+    position: fixed; /* Fixa o elemento em relação à janela de visualização */
+    bottom: 0;      /* Alinha na parte inferior */
+    left: 0;        /* Alinha na borda esquerda */
+    width: 100%;    /* Ocupa toda a largura */
+    
+    /* Estilos adicionais */
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    text-align: center;
+    z-index: 1000; /* Garante que ele fique acima de outros elementos, se necessário */
+}
+
+/* É importante adicionar um padding ou margin na parte inferior do body
+   para que o conteúdo não fique escondido atrás do footer fixo */
+body {
+    padding-bottom: 50px; /* Ajuste este valor para a altura do seu footer */
+}
+        
+
+        main {
+            flex: 1; /* Faz o conteúdo principal crescer e ocupar o espaço restante */
+        }
+
+        
+        div.bloco{
+            height: 200px;
+            border: 11px solid black;
+            border-radius: 20px;
+            margin 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <p>Memória do Teatro</p>
+    </header>
+   <main>
+        <!-- TODO SEU CONTEÚDO PRINCIPAL AQUI -->
+         <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+        <div class="bloco"></div>
+    </main>
+    <footer>
+        <p>Copyright &copy; 2025</p>
+    </footer> 
+</body>
+</html>
