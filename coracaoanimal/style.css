@@ -1,0 +1,97 @@
+@charset "UFT-8";
+
+* {
+    
+    --cor1: #ff1493;
+    --cor2: #f573d9;
+    --cor3: #e6c5d6;
+    --cor4: #e4d060;
+
+    margin: 0px;
+    padding: 0px;
+}
+
+header {
+   background-color: var(--cor1);
+   height: 120px;
+   width: 100vw;
+   color: white;
+   
+}
+header h1, header h2{
+    text-align: center;
+    padding-top: 10px;
+}
+header nav a {
+    float: right;
+    align-content: ;
+    margin-right: 25px;
+    background-color: var(--cor2);
+    padding: 5px 5px;
+    color: white;
+    text-decoration: none;
+    border-radius: 15px;
+    transition-duration: 0.5s;
+    box-shadow: rgba(0, 0, 0, 0.527) 1px 1px 3px;
+}
+header nav a:hover {
+    color: var(--cor1);
+    background-color: var(--cor3);
+}
+
+main {
+    background-color: var(--cor3);
+    list-style-position: inside;
+}
+div.subtitulo {
+    text-align: center;
+    padding: 5vh 0px;
+    
+}
+div.subtitulo img {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin: 10px 30px 0px 30px;
+}
+div.subtitulo h1 {
+    text-transform: uppercase;
+    background-color: var(--cor1);
+    color: white;
+    padding: 1vh 2vw;
+    border-radius: 30px;
+    max-width: 800px;
+    min-width: 400px;
+    font-size: 1.5em;
+    display: inline-block;
+}
+
+
+
+div.empresas_apoiadoras {
+    background-color: white;
+    border: 1px solid var(--cor4);
+    border-radius: 10px;
+    margin: 10px 20vw 50px 20vw;
+    width: 60vw;
+    display: inline-block;
+    text-align: center;
+}
+div.empresas_apoiadoras > img {
+  padding: 5px; 
+}
+
+
+div.apoiadores{
+    padding: 50px 1vw 50px 5vw;
+    background-color: black;
+    color: white;
+}
+div.apoiadores > ul {
+    columns: 4;
+}
+div.apoiadores > ul li {
+    list-style-type: "\2B50\00A0\00A0";
+    padding-bottom: 5px;
+    text-indent: -5px;
+}
