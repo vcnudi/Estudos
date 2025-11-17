@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurando colunas</title>
+</head>
+<style>
+
+    table {
+        border-collapse: collapse;
+        border: 1px solid black;
+    }
+    th, td {
+        border: 1px solid red;
+        padding: 10px;
+    }
+    .amarelo {
+        background-color: lightyellow;
+    }
+    .vermelho {
+        background-color: lightpink;
+    }
+</style>
+<body>
+    <table>
+        <colgroup>
+            <col class="amarelo">
+            <col class="vermelho" span="2">
+            <col class="amarelo">
+            >
+        </colgroup>
+        <caption>cadastro</caption>
+        <tr>
+            <th>nome</th>
+            <th>sobrenome</th>
+            <th>idade</th>
+            <th>sexo</th>
+        </tr>
+        <tr>
+            <td>nnoommee</td>
+            <td>ssoobbrreennoommee</td>
+            <td>iiddaaddaaddee</td>
+            <td>sseexxoo</td>
+        </tr>
+        <tr>
+            <td>nnoommee</td>
+            <td>ssoobbrreennoommee</td>
+            <td>iiddaaddaaddee</td>
+            <td>sseexxoo</td>
+        </tr>
+        <tr>
+            <td>nnoommee</td>
+            <td>ssoobbrreennoommee</td>
+            <td>iiddaaddaaddee</td>
+            <td>sseexxoo</td>
+        </tr>
+        <tr>
+            <td>nnoommee</td>
+            <td>ssoobbrreennoommee</td>
+            <td>iiddaaddaaddee</td>
+            <td>sseexxoo</td>
+        </tr>
+        <tr>
+            <td>nnoommee</td>
+            <td>ssoobbrreennoommee</td>
+            <td>iiddaaddaaddee</td>
+            <td>sseexxoo</td>
+        </tr>
+    </table>
+</body>
+</html>

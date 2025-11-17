@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iframes mutaveis</title>
+</head>
+<style>
+    iframe {
+        display: block;
+        margin: auto;
+        border: 15px solid brown;
+        width: 80vw;
+        height: 30vh;
+    }
+</style>
+<!--
+    -- para isso funcionar nao pode deixar de dar nome (name) no iframe
+    para depois referenciar no href no parametro target
+-->
+<body>
+    <ul>
+        <li><a href="pag_add/pag01.html" target="pagina">Pagina 01</a></li>
+        <li><a href="pag_add/pag02.html" target="pagina">Pagina 02</a></li>
+        <li><a href="pag_add/pag03.html" target="pagina">Pagina 03</a></li>
+    </ul>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ullam quia voluptas illum deleniti laboriosam omnis unde possimus ratione velit maiores! Placeat expedita hic ipsa aperiam dolorem mollitia quo nobis consequatur!</p>
+    
+    <!--
+        -- para o primeiro carregamento nao ficar com iframe vazio
+        pode usar uma pagina especifica no parametro src (recomendado)
+
+        <iframe src="../ex024/iframe01.html" name="pagina" frameborder="0"></iframe>
+
+        -- pode usar o parametro srcdoc para incluir comandos HMTL diretamente
+        -- se usar algum comando que tenha parametro com "" lembrar de usar ''
+    -->
+         <iframe srcdoc="
+         <h1>Escolha uma opção acima</h1>
+         <p> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Id, molestias consequuntur vero officia illum quod ex quibusdam quisquam amet quia iusto enim possimus explicabo sit natus rerum eligendi reiciendis quam.</p>
+         " name="pagina" frameborder="0"></iframe>
+</body>
+</html>
