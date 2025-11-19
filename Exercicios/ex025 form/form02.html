@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mais Exemplos de Fomularios</title>
+</head>
+<body>
+    <h1>mais testes com input e label</h1>
+    <h2>reset, password, date, time, month, email, </h2>
+    <br>
+    <h2>autocomplete nao consegui fazer funcionar</h2>
+
+    <form action="cadastro.php" method="post" autocomplete="on">
+<!-- autocomplete no form serve pra indicar se o parammetro devera funionaru nao
+        porem o autocomplete no input serve para indicar o tipo de informacao que sera usada para as sugestoes
+        por ex username, email, current-password, new-password.. e outras
+
+        -- user TYPE PASSWORD  para colocar os asteriscos ao digitar
+    -- aquele olho que clica e mostra/escode senha precisa de java script
+        basicamennte tem que mudar o type de password para text e tb
+        mudar a imagem 
+        
+-->
+        <label for="">new password</label>
+        <input type="password" autocomplete="new-password">
+        <br>
+        <label for="">current password</label>
+        <input type="password" autocomplete="current-password">
+        <br>
+        <label for="i_nome">teste para autocomplete</label>
+        <input type="text" name="c_nome" id="i_nome" autocomplete="username">
+        <br>
+        <label for="">DATE</label>
+        <input type="date">
+        <br>
+        <label for="">MONTH</label>
+        <input type="month">
+        <br>
+        <label for="">TIME</label>
+        <input type="time">
+        <br>
+
+    <!-- EMAIL basicamente só confere se tem uma @ no texto   -->
+        <label for="">EMAIL</label>
+        <input type="email">
+        <br>
+
+        <label for="">TEL</label>
+
+<br>
+<h2>nao consegui os regex expressoes regulares</h2>
+<input type="tel" name="" id="" pattern="^[0-9](4)-[0-9](4)$"> 
+
+<input type="tel" name="" id="" pattern="^/(/d{2}/)$" placeholder="(##)">
+
+        <br>
+        <input type="submit" value="Enviar">
+ <!-- RESET LIMPA TODOS OS CAMPOS DO FORMULARIO
+        -->       
+        <input type="reset" value="Limpar">
+    </form>
+</body>
+</html>

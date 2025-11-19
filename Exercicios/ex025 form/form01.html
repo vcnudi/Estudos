@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testes de Formulario</title>
+</head>
+<body>
+    <h1>Form basico</h1>
+    <!-- 
+    -- cadastro.php ainda sem funcao apenas para evitar que de erro por nao existir arquivo
+    -- METHOD porr padrao é GET, porem ele tem uma limitacao de 3kb e nao aceita envio de imagens
+    -- METHOD="POST" deve serr usado parra envio de dados sensiveis e ouu restritos como imagem
+    -- para segurança rreal devve ser usado HTPS/PHP
+    -->
+
+    <form action="cadastro.php" method="post">
+        <input type="text" name="" id="">
+        <input type="submit" value="Enviar">
+    </form>
+
+    <h1>Exemplo de conceitos basicos - Input e Label</h1>
+    <h2>autocomplete, requeried, min, max, step, minheigth, maxheigth, size, placeholder, value </h2>
+<!-- AUTOCOMPLETE ON ou OFF , para obter sugestoes pra o preenchimento-->
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+
+<!-- LABEL é o que  irá apareccer na tela como texto para o usuario
+        FOR é onde será feita a linkagem de referencia com o ID do INPUT
+-->
+        <LABel for="inome">Nome do Lindo Usuário a ser Cadastrado </LABel>
+
+
+<!-- INPUT sao os campos as serem digitados  onde 
+        TYPE é o tipo de informacao a ser digitada 9deve estar de acordo com db
+        NAME é a referencia que será usada para o gerenciador de DB
+        ID   é a refeencia usada no HTML e CSS
+
+        -- REQUIRED para definir que campo deve ser preenchido
+        -- PLACEHOLDE texto que aparece no campo para orrientacao do usuario, mas isso nao é um preenchimento
+        -- VALUE é um texto de pre preenchimento que depois pode ser alterado
+        -- VALUE anula o PLACEHOLDER
+-->
+        <input type="text" name="cnome" id="inome" required placeholder="Seu nome amorzinho">
+        <br>     
+        <label for="isobrenome">Sobrenome do lindão</label>
+        <input type="text" name="csobrenome" id="isobrenome" required placeholder="Seu sobrenome" value="Nudi">
+        <br>
+
+<!--    não aceitou SIZE em TYPE NUMBER 
+    MIN E MAX para definir minimo e maximo aceitos no campo 
+    STEP para escalonar o avanço possivel para o numero, neste exemplo so podem numeros pares. Poderia usar numero decinal para a evolução 
+-->
+        <label for="i_idade">Idade</label>
+        <input type="number" name="c_idade" id="i_idade" min="18" max="110" placeholder="infelizmente é necessário tem mais que 18 anos" step="2">
+        <br>
+
+    <!-- para TYPE TEXT pode se usar
+            MINHENGTH E MAXHENGTH parra especificar min e max de caracteres 
+            SIZE é o numero de caracteres que o campo tera para aparecer na tela , isso nao interfere no tamanho efetivo do campo apenas o que aparece na tela
+OBS  mesmo deinindo que tem um MINHEIGth se nao colocar o REQUIRED pode ficar sem  preencher (nao faz sentido)
+        -->
+        <label for="i_apresentacao">Conte-me um pouco sobre você </label>
+        <input type="text" name="c_apresentacao" id="i_apresentacao" minlength="15" maxlength="250" size="30" >
+        <br>
+        
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+</html>
