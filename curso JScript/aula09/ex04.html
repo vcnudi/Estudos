@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testando DOM</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: aquamarine;
+            color: green;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>Teste de DOM</h1>
+    <h2>sub titulo</h2>
+    <p>Aqui vai o resultado</p>
+    <p>Aprendendo a usar  o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">Clique em mim</div>
+</body>
+
+<script>
+    window.document.write(`Ola mundo !!!<br>`)
+    window.document.write(window.document.charset+"<br>")
+    window.document.write(window.navigator.appName+"<br>")
+        window.document.write(window.document.URL+"<br>")
+        // a gente pode selecionnar por Marca, ID , Nome, Class ou Seletor
+        //por Marca
+        var p1 = window.document.getElementsByTagName('p')[1]
+        // .innerText pega o texto do elemento
+        window.document.write(p1.innerText+"<br>")
+        // .innerHtml pega o texto formatado elemento
+        window.document.write(p1.innerHTML+"<br>")
+        // pode usar 
+
+        
+
+
+
+</script>
+</html>

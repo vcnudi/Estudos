@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Brincando com string e number</title>
+</head>
+<body>
+    <h1>String e Number</h1>
+    <h2>string .length .toUpperCase() .toLowseCase()</h2>
+    <h2>.toFixed(n) .replace("" . "")</h2>
+    <h2>.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</h2>
+
+
+    <script>
+        var v_texto = window.prompt("Digite um texto e vou te mostrar umas funções : ")
+        var v_numero = Number(window.prompt("Digite também um número que tenha ao menos uma casa decimal usando ponto"))
+
+        document.writeln(`Você digitou o seguinte texto :<br><br>${v_texto}<br><br>`)
+        document.writeln(`Usando <strong>.length</strong> posso contar as letras do texto, neste caso foram ${v_texto.length} caracteres<br>`)
+        document.writeln(`<br>Posso apresentar tudo com letras maiúsculas usando <strong>.toUpperCase()</strong> e o texto ficará assim <br><br>${v_texto.toUpperCase()}<br>`)
+        document.writeln(`<br>Se usar <strong>.toLowerCase()</strong> escrevo tudo em minúsculas, veja<br><br>${v_texto.toLowerCase()}`)
+
+        document.writeln(`<br><br>O numero que você digitou foi <br><br>${v_numero}<br><br>`)
+        document.writeln(`Posso apresentar o numero com uma quantidade especifica de casas decimais usando <strong>.toFixed(n)</strong><br><br>`)
+        document.writeln(`Usando .toFixed(2) .... ${v_numero.toFixed(2)}<br>`)
+        document.writeln(`Usando .toFixed(1) .... ${v_numero.toFixed(1)}<br><br>`)
+        document.writeln(`Para mudar o . e usar a virgula precisa muudarr um pouco e usar o <strong>.toFixed(n).replace('.' , ',')</strong><br><br>`)
+        document.writeln(`Fica assim ${v_numero.toFixed(2).replace('.',',')}<br>`)
+        document.writeln(`Tambem consigo configurar para moeda local, é uma configuracao mais avançada ... <br><strong>.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'})</strong><br>
+       ${v_numero.toLocaleString('pt-BR', {style: 'currency', currency: 'BRL'} ) }<br> Neste caso o navegador já irá configurarr a virgula para decimal e os pontos nas milhares`)
+    
+    </script>
+</body>
+</html>

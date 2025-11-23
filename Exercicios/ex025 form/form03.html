@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mais formularios</title>
+</head>
+<style>
+    * {
+        margin: 0px;
+        padding: 0px;
+        
+    }
+    body {
+        margin: 5vw;
+    }
+    fieldset {
+        border: 2px solid red;
+        border-radius: 15px;
+        background-color: lightpink;
+        padding: 10px 20px;
+    }
+    legend, .botao {
+        border: 2px solid red;
+        border-radius: 15px;
+        background-color: red;
+        color: white;
+        padding: 2px 35px;
+    }
+    .botao:hover {
+        box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.473);
+        transform: translate(1px, 1px);
+    }
+    label {
+        color: red;
+    }
+    label:hover {
+        font-weight: bold;
+    }
+    input:checked + label{
+        font-weight: bold;
+    }
+/* Para mudar a cor do quadro de escolha */
+    input[type='radio'], input[type='checkbox'] {
+        accent-color: red; 
+    }
+    
+</style>
+<body>
+    <h1>mais Input e Lable</h1>
+    <h2>fieldset, legend, radio, checkbox checked, </h2>
+    <h2>e brinquei de colocar um estilo no formulario</h2>
+
+    <form action="cadastro.php" method="post">
+
+<!--
+        FIELDSET serve para fazer um agrupamento de campos
+        LEGEND para dar nome ao agrupamento de campos
+    -- se nao utilizar LEGEND simplesmente cria um grupo sem nomee pode ter uma formatação propria
+        type RADIO usado para escolha uma opção em um grupo de itens
+    -- nao esquecer de que NAME tem que ser igual em todos os campos e
+    o ID tem que ser diferente em todos os campos 
+
+-->
+        <fieldset>
+            <legend>Sexo</legend>
+
+            <input type="radio" name="c_sexo" id="i_sexoM" required> 
+            <label for="i_sexoM">Masculino</label>
+            <br>
+            <input type="radio" name="c_sexo" id="i_sexoF"> 
+            <label for="i_sexoF">Feminino</label>
+            <br>
+
+        </fieldset>
+<br>
+        <fieldset>
+            <legend>Esportes de Interesse</legend>
+
+            <input type="checkbox" name="c_esporte" id="i_espFUT">
+            <label for="i_espFUT">Futebol</label><br>
+            <input type="checkbox" name="c_esporte" id="i_espVOL">
+            <label for="i_espVOL">Volei</label><br>
+            <input type="checkbox" name="c_esporte" id="i_espBAS">
+            <label for="i_espBAS">Basquete</label><br>
+            <input type="checkbox" name="c_esporte" id="i_espNET">
+            <label for="i_espNET">Netflix</label><br>
+
+        </fieldset>
+<br>
+        <input class="botao" type="submit" value="Enviar">
+        <input class="botao" type="reset" value="Limpar">
+
+    </form>
+</body>
+</html>
